@@ -9,4 +9,43 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+  --link-color: #f1b2ce;
+  --shadow-color: #ff0070;
+  --header-color: #db00ff;
+  --bg-color: #F5F5F5;
+  --text-color: #353430;
+  --button-color: #ff0070;
+  --header-background-image: url("/images/cover-image-light.png");
+  --button-color-transorent: rgba(255, 0, 122, 0.4);
+}
+/*
+  --page-bg-color: #fff1f7;
+  --header-background-image: url("/images/cover-image-light.png");
+  --button-color: #ff8dcb;
+  --button-color-transorent: rgba(255, 141, 203, 0.4);
+  --section-title-color: var(--button-color);
+  --card-content-text-color: #353430;
+
+*/
+
+.page.theme_light > * .only-dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  .page.theme_auto {
+    --link-color: #f1b2ce;
+    --shadow-color: #ff0070;
+    --header-color: #db00ff;
+    --bg-color: #F5F5F5;
+    --text-color: #353430;
+    --button-color: #ff0070;
+    --header-background-image: url("/images/cover-image-light.png");
+    --button-color-transorent: rgba(255, 0, 122, 0.4);
+  }
+
+  .only-dark {
+    display: none;
+  }
 }

@@ -2,3 +2,29 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --theme-menu-item-vertical-margin: 0px;
+  --theme-menu-item-horisontal-margin: 10px;
+}
+@media (width < 376px) {
+  :root {
+    --header-title-font-size: 116px;
+    --header-decorated-zone-height: 668px;
+  }
+}
+@media (width > 375px) and (width < 769px) {
+  :root {
+    --header-title-font-size: 120px;
+    --header-decorated-zone-height: 1024px;
+  }
+}
+@media (width > 768px) {
+  :root {
+    --header-title-font-size: 157px;
+    --header-decorated-zone-height: 768px;
+
+    --theme-menu-item-vertical-margin: 10px;
+    --theme-menu-item-horisontal-margin: 0px;
+  }
+}
